@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Calculadora de pagamento de hipoteca</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <main class="">
+
+      <section class="formulario">
+
+        <div class="titulo">
+
+          <h2>Calculadora de Hipoteca</h2>
+          <p>Limpar tudo</p>
+
+        </div>
+
+        <form>
+
+          <div class="valor">
+
+            <label for="ivalor" >
+            <input type="number" name="valor" id="ivalor" required>
+
+            <span></span>
+          Valor da hipoteca
+            </label>
+          </div>
+
+          <div class="div">
+
+            <div>
+              <label for="iprazo">
+              <input type="number" name="prazo" id="iprazo" required>
+              Prazo da hipoteca
+              </label>
+
+               <span></span>
+
+            </div>
+
+            <div>
+              <label for="itaxa">
+              <input type="number"  name="taxa" id="itaxa" required>
+              Taxa de juro
+              </label>
+
+               <span></span>
+
+            </div>
+            
+          </div>
+
+          <div class="tipo">
+
+            <p>Tipo de hipoteca</p>
+
+               <label class="click" for="iPagamento" >
+               <input type="radio" name="tipo" id="iPagamento" required>
+               <span></span>
+               Pagamento
+               </label>
+            
+               <label class="click" for="ijuro">
+               <input type="radio" name="tipo" id="ijuro" required>
+               <span></span>
+                Somente juros
+               </label>
+        
+          </div>
+
+          <button type="submit">Calcular prestações</button>
+        </form>
+
+      </section>
+
+      <section class="resultado">
+
+        <h2>Os seus resultados</h2>
+
+        <p>Os seus resultados são apresentados abaixo com base nas informações <br> fornecidas.
+        Para ajustar os resultados, edite o formulário e clique <br> novamente em “calcular prestações”.</p>
+
+        <div class="res">
+
+          <p>As suas prestações mensais</p>
+
+          <h1 id="mensal">
+             Kz 0,00
+          </h1>
+          
+
+           <p>Total que vais pagar durante o prazo</p>
+
+          <h3 id="total">
+              Kz 0,00
+          </h3>
+
+        </div>
+      </section>
+
+  </main>
+
+</body>
+</html>
