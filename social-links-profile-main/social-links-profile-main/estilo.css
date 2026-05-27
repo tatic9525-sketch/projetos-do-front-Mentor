@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --principal: rgb(20, 20, 20);
+    --destaque:  rgb(31, 31, 31);
+    --redes-sociais: rgb(51, 51, 51);
+    --paragrafos: rgb(255, 255, 255);
+    --cidede: rgb(197, 248, 42);
+}
+
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: var(--principal);
+
+}
+
+.caixa{
+    width: 100%;
+    max-width: 350px;
+    padding: 35px;
+    border-radius: 15px;
+    text-align: center;
+    background: var(--destaque);
+}
+
+img{
+    width: 90px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+h1{
+    color: var(--paragrafos);
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.cidade{
+    color: var(--cidede);
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.descricao{
+    color: var(--paragrafos);
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.links a{
+    background: var(--redes-sociais);
+    color: var(--paragrafos);
+    text-decoration: none;
+    padding: 14px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.links a:hover{
+    background: var(--cidede);
+    color: var(--principal);
+}
